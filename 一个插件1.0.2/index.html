@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="aes.js"></script>
+<link rel="stylesheet" href="index.css">
+<style>
+    * {
+        margin: 0;
+        padding: 5px;
+    }
+
+    html {
+        text-align: center;
+    }
+
+    h1 {
+        display: block;
+        width: 360px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    [class*="loader-"] {
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        color: inherit;
+        vertical-align: middle;
+        pointer-events: none;
+    }
+
+    #btn {
+        /* width: 120px; */
+        height: 40px;
+        white-space: nowrap;
+        color: #fff;
+        background-color: #409eff;
+        border-color: #409eff;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        line-height: 1;
+        cursor: pointer;
+        border: 1px solid #dcdfe6;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        font-weight: 500;
+        padding: 12px 24px;
+        font-size: 14px;
+        border-radius: 6px;
+        margin-left: 6px;
+    }
+
+    .loader-03 {
+        display: none;
+        border: 1px solid currentcolor;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: 1s loader-03 linear infinite;
+        animation: 1s loader-03 linear infinite;
+        position: relative;
+    }
+
+    @-webkit-keyframes loader-03 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes loader-03 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <h1>Welcome to XuanDong!</h1>
+    <button id="btn">
+        <div class="loader-03"></div>
+        <span>获取账号密码</span>
+    </button>
+</body>
+<script src="jquery-1.8.3.js"></script>
+<script src="popup.js"></script>
+
+</html>
